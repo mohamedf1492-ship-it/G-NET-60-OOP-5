@@ -16,6 +16,18 @@
                  Polymorphism: Allows different objects to be handled through the same interface.
             */
             #endregion
+
+            #region part1 Q2
+            /*
+            a) The problem is that both interfaces define a method named Greet(), but the class provides only one public implementation.
+            Therefore, both interfaces use the same method implementation, which prints "Hello / Ahlan".
+
+            b) The solution is to use Explicit Interface Implementation:
+            c) No, translator.Greet() cannot be called directly because the methods are implemented explicitly.
+            We must call each method through its interface reference:
+
+            */
+            #endregion
         }
     }
 }
