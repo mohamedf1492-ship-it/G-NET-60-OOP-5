@@ -28,6 +28,33 @@
 
             */
             #endregion
+
+            #region part1 Q3
+            /*
+            Shallow Copy: Creates a new object but copies reference-type fields as references, 
+            so the original and copied objects share the same referenced objects.
+
+            Deep Copy: Creates a new object and independent copies of its referenced objects.
+
+            Shallow Copy: Useful when sharing referenced objects is acceptable or when the object contains only value types
+            and immutable references.
+
+            Deep Copy: Useful when the copy must be fully independent from the original.
+            */
+            #endregion
+
+            #region part1 Q4
+            /*
+            the output is:
+                       Dev - Testing
+                       QA - Testing
+            MemberwiseClone() creates a shallow copy. The Title field is a string reference that is reassigned independently 
+            when e2.Title = "QA" is executed. However, e1.Dept and e2.Dept refer to the same Department object.
+            Therefore, changing e2.Dept.Name to "Testing" also changes the department name observed through e1.
+
+
+            */
+            #endregion
         }
     }
 }
